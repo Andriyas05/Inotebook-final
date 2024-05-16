@@ -1,17 +1,114 @@
-<div id="top"></div>
+# Inotebook - MERN Stack Project
 
-<br />
-<div align="center">
-  <p align="center">
-    INotebook - Your Notebook on the cloud
-    
-  </p>
-</div>
+## Introduction
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+Welcome to Inotebook! This project is an online web platform designed to help you create, edit, upload, and delete your notes and information securely and privately. Built using the MERN stack (MongoDB, Express.js, React.js, and Node.js), Inotebook ensures the security of your data with JWT authentication and bcrypt.js for password encryption.
 
-An online web platform where you can create, edit, upload, delete your notes/information privately and securely without any disturbancee. For more info you can checkout our About Page
+## Table of Contents
+
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Running the Application](#running-the-application)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+
+- User authentication (Sign up, Log in, Log out)
+- Create, edit, and delete notes
+- Secure storage with JWT authentication
+- Password encryption using bcrypt.js
+- Responsive design
+
+## Technologies Used
+
+- **Frontend:**
+  - React.js
+  - Redux for state management
+  - Bootstrap for styling
+
+- **Backend:**
+  - Node.js
+  - Express.js
+  - MongoDB
+
+- **Security:**
+  - JSON Web Tokens (JWT)
+  - bcrypt.js for password hashing
+
+## Installation
+
+To set up the project locally, follow these steps:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Andriyas05/Inotebook-final.git
+   cd Inotebook-final
+   ```
+
+2. **Install dependencies for both frontend and backend:**
+   ```bash
+   # For frontend
+   npm install
+   ```
+
+   
+   # For backend
+   cd backend
+   npm install
+
+   
+
+## Configuration
+
+### Backend Configuration
+
+1. Create a `.env` file in the `backend` directory and add the following environment variables:
+   ```plaintext
+   PORT=5000
+   MONGODB_URL=<your_mongodb_connection_string>
+   JWT_SECRET=<your_jwt_secret_key>
+   ```
+
+### Frontend Configuration
+
+1. Create a `.env` file in the `frontend` directory and add the following environment variables:
+   ```plaintext
+   REACT_APP_API_URL=http://localhost:5000/api
+   ```
+
+## Running the Application
+
+1. **Start the backend server:**
+   ```bash
+   cd backend
+   npm start
+   ```
+
+2. **Start the frontend development server:**
+   ```bash
+   npm start
+   ```
+
+3. Open your browser and navigate to `http://localhost:3000` to view the application.
+
+
+## Contributing
+
+Contributions are welcome! Please follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix.
+3. Make your changes.
+4. Submit a pull request with a detailed description of your changes.
+
+
+
+
+
 
 ### Project Images
 Home Page
@@ -42,144 +139,9 @@ About Page
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
+---
 
-### Built With
+Thank you for checking out Inotebook. If you have any questions or feedback, please feel free to open an issue or reach out to the maintainers. Happy coding!
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 
-* [React.js](https://reactjs.org/)
-* [Nodejs](https://nodejs.org/en/)
-* [Expressjs](https://expressjs.com/)
-* [MongoDB](https://www.mongodb.com/)
-* [MUI](https://mui.com/)
-* [mongoose](https://mongoosejs.com/)
-* [Bootstrap](https://getbootstrap.com)
-
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-
-1. Clone the repo
-   ```sh
-   git clone https://github.com/Andriyas05/Inotebook-final
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your JWT_KEY  in `.env`
-   ```js
-   JWT_KEY=your-secret
-   ```
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-Made from the tutorial of code with harry , so thanks to him :)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
