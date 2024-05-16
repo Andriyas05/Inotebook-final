@@ -53,12 +53,14 @@ To set up the project locally, follow these steps:
    ```bash
    # For frontend
    npm install
-   ```
+   
 
    
    # For backend
    cd backend
    npm install
+
+   ```
 
    
 
